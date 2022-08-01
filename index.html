@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>touch the nums</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body onload="init()">
+		<h1>Touch the Numbers</h1>
+		<h2>select level</h2>
+		<div class="container">
+			<div class="new-game">
+				<button class="btn-new-game" onclick="initGame()">New Game</button>
+			</div>
+
+			<div class="levels">
+				<input type="radio" name="level" value="4" onclick="initGame()" />
+				<label for="easy">easy</label>
+				<input type="radio" name="level" value="5" onclick="initGame()" />
+				<label for="normal">normal</label>
+				<input type="radio" name="level" value="6" onclick="initGame()" />
+				<label for="hard">hard</label>
+			</div>
+
+			<div class="next-num timer">
+				<span class="time">00:00:000</span>
+				<span class="num">1</span>
+			</div>
+
+			<div class="table">
+				<table class="board"></table>
+			</div>
+		</div>
+		<script src="main.js"></script>
+	</body>
+</html>
